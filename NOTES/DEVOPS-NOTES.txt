@@ -1,4 +1,4 @@
-                                                                    DEVOPS NOTES 
+                                                                    DEVOPS NOTES   
 
 
                                                                  <------DOCKER ----->
