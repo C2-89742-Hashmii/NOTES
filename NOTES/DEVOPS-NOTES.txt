@@ -79,3 +79,53 @@ docker inspect <container_id>  # Inspect container details (including volumes)
 ->BY RUNNING DOCKER IMAGE WE GET DOCKER CONTAINER
 ->WE CAN ALSO PULL PRE BUILT DOCKER IMAGE
 ->
+
+------------------------------------------------------------------------------------------------------------------------
+                                     <------------DOCKER file------------->
+-> IN THIS FILE WE WROTE ALL THE INSTRUCTION & DEPENDENTIES 
+->  FOR EXAMPLE - SUPPOSE I WANT TO MAKE A MAGGIE SO BASICALLY DOCKER FILE CONTAINS THE RECIPE WHEN I WANT TO SHARE MY RECIPE WITH OTHERS 
+    WE SHARE THEM AS A DOCKER IMAGE AND WHEN HOST TRYING TO EXECUTE THE RECIPE  "CONGRATULATIONS MAGGIE IS READY AS WELL AS OUR CONTAINERS]'
+->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
