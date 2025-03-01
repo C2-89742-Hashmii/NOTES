@@ -4,6 +4,49 @@
                                                                  <------DOCKER ----->
 
 ------------------------------------------------------------------------------------------------------------------------
+                                                       <------- DOCKER COMMANDS--------->
+------------------------------------------------------------------------------------------------------------------------
+docker --version              # Check Docker version
+docker info                   # Display system-wide Docker information
+
+
+                            [CONTAINER MANAGEMENT]
+docker ps                     # List running containers
+docker ps -a                  # List all containers (including stopped ones)
+docker run <image>             # Run a container from an image
+docker run -d <image>          # Run container in detached mode
+docker run --name mycontainer <image>  # Run container with a custom name
+docker stop <container_id>     # Stop a running container
+docker start <container_id>    # Start a stopped container
+docker restart <container_id>  # Restart a container
+docker rm <container_id>       # Remove a container
+docker logs <container_id>     # View container logs
+docker exec -it <container_id> bash  # Access a running container's shell
+
+                             [IMAGE MANAGEMENT ]
+
+docker images                  # List all available images
+docker pull <image>            # Download an image from Docker Hub
+docker build -t myimage .      # Build an image from a Dockerfile
+docker rmi <image_id>          # Remove an image
+docker tag myimage myrepo/myimage:v1  # Tag an image for pushing
+docker push myrepo/myimage:v1  # Push image to Docker Hub
+
+                                [ VOLUME & STORAGE ]
+
+docker volume ls               # List all volumes
+docker volume create myvolume  # Create a new volume
+docker volume rm myvolume      # Remove a volume
+docker inspect <container_id>  # Inspect container details (including volumes)
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
 
 
 -> IT IS OPEN SOURCE TOOL WHICH IS USED TO FOR CONTAINERIZATION.
