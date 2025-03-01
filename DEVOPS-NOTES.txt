@@ -1,0 +1,119 @@
+                                                                    DEVOPS NOTES 
+
+
+                                                                 <------DOCKER ----->
+
+------------------------------------------------------------------------------------------------------------------------
+                                                       <------- DOCKER COMMANDS--------->
+------------------------------------------------------------------------------------------------------------------------
+docker --version              # Check Docker version
+docker info                   # Display system-wide Docker information
+
+
+                            [CONTAINER MANAGEMENT]
+docker ps                     # List running containers
+docker ps -a                  # List all containers (including stopped ones)
+docker run <image>             # Run a container from an image
+docker run -d <image>          # Run container in detached mode
+docker run --name mycontainer <image>  # Run container with a custom name
+docker stop <container_id>     # Stop a running container
+docker start <container_id>    # Start a stopped container
+docker restart <container_id>  # Restart a container
+docker rm <container_id>       # Remove a container
+docker logs <container_id>     # View container logs
+docker exec -it <container_id> bash  # Access a running container's shell
+
+                             [IMAGE MANAGEMENT ]
+
+docker images                  # List all available images
+docker pull <image>            # Download an image from Docker Hub
+docker build -t myimage .      # Build an image from a Dockerfile
+docker rmi <image_id>          # Remove an image
+docker tag myimage myrepo/myimage:v1  # Tag an image for pushing
+docker push myrepo/myimage:v1  # Push image to Docker Hub
+
+                                [ VOLUME & STORAGE ]
+
+docker volume ls               # List all volumes
+docker volume create myvolume  # Create a new volume
+docker volume rm myvolume      # Remove a volume
+docker inspect <container_id>  # Inspect container details (including volumes)
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+-> IT IS OPEN SOURCE TOOL WHICH IS USED TO FOR CONTAINERIZATION.
+->FIRST RELEASE IN 2013 BY "SOLOMON HYKES" WHILE HE WAS WORKING AT "DOTCLOUD" (A PAAS COMPANY)
+->
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+                                     <------------DOCKER ARCHITECTURE------------->
+
+1->DOCKER ENGINE -> ALSO KNOWN AS "DOCKER APPLICATION CONTAINER ENGINE"
+2->DOCKER DAEMON -> IT USE "CONTAINER D" (WHICH IS WRITTEN IN GOLANG) IN BACKGROUND AND MANAGE CONTAINER
+3->DOCKER CLI
+4->DOCKER CLIENT -> CONNECT API(APPLICATION PROGRAMABLE INTERFACE) AND TALK WITH DOCKER ENGINE TO SHOW CONTAINER
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+                                     <------------DOCKER IMAGE------------->
+ 
+->IT IS CREATED BY "DOCKER FILE" 
+->IT IS LIKE A BLUEPRINT
+->IT CONTAINS ALL THE DEPENDENCIES
+->BY RUNNING DOCKER IMAGE WE GET DOCKER CONTAINER
+->WE CAN ALSO PULL PRE BUILT DOCKER IMAGE
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+                                     <------------DOCKER FILE------------->
+
+
+->IN THIS FILE WE WROTE ALL THE INSTRUCTION AND ADD ALL THE DEPENDENCIES (BASICLY WE CAN SAY JSE APAN KO MAGGIE BANANA HAII TO KSE BANTI HAI MAGGIE USKE STEP LIKHTE HAII DOCKER FILE ME  )
+
+-> AB YEH RECIPE KI FILE KISI KO DE DIA TO VO USE DOCKER IMAGE KHANGE 
+-> AUR AB YEH RECIPE KO EXECUTE KREGA TO MAGGIE TYYAR AS WELL AS APAN KA CONTAINER BHI BAN GYA 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
