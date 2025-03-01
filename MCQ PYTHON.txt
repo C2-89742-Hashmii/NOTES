@@ -1,0 +1,35 @@
+15. What will be the output of the following Python code snippet if x=1?
+
+x<<2
+a) 4
+b) 2
+c) 1
+d) 8
+View Answer
+
+Answer: a
+Explanation: The binary form of 1 is 0001. The expression x<<2 implies we are performing bitwise left shift on x. This shift yields the value: 0100, which is the binary form of the number 4.
+
+##############################################################################################################################################################################################9. Which of the following is the truncation division operator in Python?
+a) |
+b) //
+c) /
+d) %
+View Answer
+
+Answer: b
+Explanation: // is the operator for truncation division. It is called so because it returns only the integer part of the quotient, truncating the decimal part. For example: 20//3 = 6.
+##############################################################################################################################################################################################
+20. What will be the output of the following Python code?
+
+l=[1, 0, 2, 0, 'hello', '', []]
+list(filter(bool, l))
+a) [1, 0, 2, ‘hello’, ”, []]
+b) Error
+c) [1, 2, ‘hello’]
+d) [1, 0, 2, 0, ‘hello’, ”, []]
+View Answer
+
+Answer: c
+Explanation: The code shown above returns a new list containing only those elements of the list l which do not amount to zero. Hence the output is: [1, 2, ‘hello’].
+##############################################################################################################################################################################################

@@ -1,0 +1,49 @@
+#####################################################FULL FORM LINUX(OS)#########################################################
+[ BOOTING RELATED FULL FORM  ]
+
+
+BIOS->    BASIC INPUT OUTPUT SYSTEM
+OEM->     ORIGINAL EQUIPMENT MANAGER
+IBI->     INTEL  BOOT INITIATIVE 
+EFI->     EXTENSIBLE FIRMWARE INTERFACE
+UEFI-> 	  UNIFORM EXTENSIBLE FIRMWARE INTERFACE
+GRUB->    GRAND UNIFIED BOOT LOADER
+POST->    POWER ON SELF TEST
+BCD->     BOOT CONFIG DATA 
+
+####################################################################################################################################
+
+
+apt->     a packaging tool($sudo apt)
+UNICS->(UNIX)->
+GNU
+
+
+
+
+####################################################################################################################################
+
+
+[TO MAKE DEVICE BOOTABLE WE NEED TO COPY THE BOOT SECTOR WHICH CONATAIN THE BOOTSTRAP PROGRAM(512 BYTE OF DEVICE) AND BOOT LOADER]
+[LINUX KERNEL NAME IS VMLINUZ & WINDOWS NTOSKRNL.EXE]
+
+
+
+####################################################################################################################################
+
+######################################################BOOT PROCESS IN   WINDOWS#####################################################
+POWER ON 
+(1) FIRMWARE [PRGRM RAM(EFI ->EXTENSIBLE FIRMWARE INTERFACE)]
+(2) POST (POWER ON SELF TEST)
+(3) BOOTSTRAP LOADER 
+(4) BOOT LOADER [ BOOTMGR ->(SHOWS OPTION FROM BCD)]
+(5) KERNEL
+
+
+####################################################################################################################################
+
+
+
+
+
+

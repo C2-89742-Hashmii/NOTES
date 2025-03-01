@@ -1,0 +1,11 @@
+#####################################################COOMAND USE IN  LINUX(OS)#########################################################
+
+
+$sudo apt update [$Sudo->( do as super user)] [apt (a packaging tool)]
+$sudo apt install  vim python3
+$	
+
+
+
+
+

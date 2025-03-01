@@ -1,0 +1,38 @@
+                                                                    DEVOPS NOTES 
+
+
+                                                                 <------DOCKER ----->
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+-> IT IS OPEN SOURCE TOOL WHICH IS USED TO FOR CONTAINERIZATION.
+->FIRST RELEASE IN 2013 BY "SOLOMON HYKES" WHILE HE WAS WORKING AT "DOTCLOUD" (A PAAS COMPANY)
+->
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+                                     <------------DOCKER ARCHITECTURE------------->
+
+1->DOCKER ENGINE -> ALSO KNOWN AS "DOCKER APPLICATION CONTAINER ENGINE"
+2->DOCKER DAEMON -> IT USE "CONTAINER D" (WHICH IS WRITTEN IN GOLANG) IN BACKGROUND AND MANAGE CONTAINER
+3->DOCKER CLI
+4->DOCKER CLIENT -> CONNECT API(APPLICATION PROGRAMABLE INTERFACE) AND TALK WITH DOCKER ENGINE TO SHOW CONTAINER
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+                                     <------------DOCKER IMAGE------------->
+ 
+->IT IS CREATED BY "DOCKER FILE" 
+->IT IS LIKE A BLUEPRINT
+->IT CONTAINS ALL THE DEPENDENCIES
+->BY RUNNING DOCKER IMAGE WE GET DOCKER CONTAINER
+->WE CAN ALSO PULL PRE BUILT DOCKER IMAGE
+->
