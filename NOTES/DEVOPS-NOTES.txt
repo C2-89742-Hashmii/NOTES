@@ -85,25 +85,45 @@ docker inspect <container_id>  # Inspect container details (including volumes)
 -> IN THIS FILE WE WROTE ALL THE INSTRUCTION & DEPENDENTIES 
 ->  FOR EXAMPLE - SUPPOSE I WANT TO MAKE A MAGGIE SO BASICALLY DOCKER FILE CONTAINS THE RECIPE WHEN I WANT TO SHARE MY RECIPE WITH OTHERS 
     WE SHARE THEM AS A DOCKER IMAGE AND WHEN HOST TRYING TO EXECUTE THE RECIPE  "CONGRATULATIONS MAGGIE IS READY AS WELL AS OUR CONTAINERS]'
-->
+-> 
+
+
+                                     <------------DOCKER file for run java file------------->
+ 
+
+
+FROM OpenJDK:17-jdk-alpin                    #(pull base image of java )
+
+WORKDIR /app                                 #(create app folder in workdir)
+
+COPY src/Main.java /app/Main.java            #(this command copy the source code )
+
+RUN javac Main.java                          #(compile the application code )
+
+CMD ["java","Main"]                          # ( run the application )
 
 
 
 
 
+#KEY POINT--
+-> EVERY LINE IN A DOCKER FILE IS LIKE A LAYER )
+-> EVERY LINE EXECUTED AS A STEP WISE 
 
 
 
+                                     <------------DOCKER FILE FOR PYTHON  APP------------->
 
 
+FROM python:3.7
 
+WORKDIR /app
 
+COPY . .
 
+RUN pip install -r requirement.txt
 
-
-
-
-
+ENTRYPOINT ["python" , " run.py]
 
 
 
