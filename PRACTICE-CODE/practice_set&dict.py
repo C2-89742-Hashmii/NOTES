@@ -42,3 +42,10 @@
 # print(type(a))
 # print(type(b))
 # print(type(c))
+
+# A={1,2,3,4,5,6,7,8,"hsafb"}
+# b=(1,2,3,4,5)
+# print (A)
+# print(type(A))
+# # print (b)
+# # print(type(b))
