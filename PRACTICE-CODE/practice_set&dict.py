@@ -24,11 +24,11 @@
 # DIC={
 #     "dgmnn":"dbsfbm",
 #     "fbmxg":"gfbzb"
-# }
+
 # # print(DIC)
 
-# # print(DIC["dgmnn"])  # direct access krne pr agar key na ho dict me to error throw hoga 
-# # print(DIC.get("dgmnnn"))  # by this .get method it return None if value dict me na ho to 
+# # # print(DIC["dgmnn"])  # direct access krne pr agar key na ho dict me to error throw hoga 
+# # # print(DIC.get("dgmnnn"))  # by this .get method it return None if value dict me na ho to 
 
 # for key in DIC.keys():
 #     print(DIC[key])
@@ -47,5 +47,13 @@
 # b=(1,2,3,4,5)
 # print (A)
 # print(type(A))
-# # print (b)
-# # print(type(b))
+#  print (b)
+#  print(type(b))
+
+# person ={ "hdfhnvn": "bsdnbnc",
+#          "sjhb":"shfb",
+#          "sdhb":"dgb"}
+# for key , value in person.items():
+#     print (key , value)
+
+

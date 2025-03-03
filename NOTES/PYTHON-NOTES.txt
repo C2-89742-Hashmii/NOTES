@@ -1,2 +1,65 @@
-######################PYTHON NOTES#########################
+######################PYTHON NOTES######################################################
+
+
+-----------------------------------------------SET--------------------------------------
+
+
+-> SET IS MUTABLE
+-> IT CCONTAINS UNIQUES VALUE .. WE CAN'T HAVE DUBLICATE  IN SET
+-> CREATED USING {}
+-> EMPTY SET = SET ()
+-> UNORDERED (BECAUSE USE HASH FUNCTION BEHIND THE SCENE )
+-> FROZEN SET ->[ IMMUTABLE COLLETION OF UNIQUE VALUE (SYNTAX -> S1=frozen set([])
+-> IN FROZEN SET WE CAN PASS LIST TUPPLE OR SET IT WILL RETUEN ALWAYS FROZEN SET
+-> FROZEN SET DOES  NOT ALLOW UPDATION BECAUSE IT IS IMMUTABLE
+
+------------------------------SET METHOD-----------------------------------------------------
+
+
+
+-> DISCARD -> REMOVE VALUE 
+-> ADD -> TO ADD VALUE IN SET
+-> S1 UNION S2 -> ONLY MATCHNG VALUE 
+-> S1 INTERSECTION S2 -> ONLY COMMAN ELEMENT FROM BOTH SET 
+-> S1-S2 -> UNCOMMON ELEMENT OF S1 WHICH IS NOT PRESENT IN S2
+
+
+------------------------------ DICTIONARY-----------------------------------------------------
+
+
+-> collection of key value pair 
+-> value can be a  any type data type
+-> dict = {}
+ 
+
+-> .keys     (give all  key present in dict)
+-> .values   (give all  values present in dict)
+-> By this [] key direct access krne pr if  key is not present in dict it's throw an error  
+-> by this ".get()" method it return [None] if key is not present in dict 
+->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

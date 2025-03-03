@@ -1,2 +1,5 @@
-print (b)
-# print(type(b))
+
+DIC={
+    "dgmnn":"dbsfbm",
+    "fbmxg":"gfbzb"
+}
