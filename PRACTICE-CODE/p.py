@@ -55,7 +55,8 @@
 # # print(n2)
 # # print(n3)
 # print(type(n1))
-################# SQAURED ELEMENT OF LIST BY MAP METHOD##########################
+################# SQUARED ELEMENT OF LIST BY MAP METHOD    #############################################################
+
 
 
 

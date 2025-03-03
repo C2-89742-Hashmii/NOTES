@@ -9,7 +9,7 @@
 -> CREATED USING {}
 -> EMPTY SET = SET ()
 -> UNORDERED (BECAUSE USE HASH FUNCTION BEHIND THE SCENE )
--> FROZEN SET ->[ IMMUTABLE COLLETION OF UNIQUE VALUE (SYNTAX -> S1=frozen set([])
+-> FROZEN SET ->[ IMMUTABLE COLLECTION OF UNIQUE VALUE (SYNTAX -> S1=frozen set([])
 -> IN FROZEN SET WE CAN PASS LIST TUPPLE OR SET IT WILL RETUEN ALWAYS FROZEN SET
 -> FROZEN SET DOES  NOT ALLOW UPDATION BECAUSE IT IS IMMUTABLE
 
@@ -36,16 +36,8 @@
 -> .values   (give all  values present in dict)
 -> By this [] key direct access krne pr if  key is not present in dict it's throw an error  
 -> by this ".get()" method it return [None] if key is not present in dict 
-->
-
-
-
-
-
-
-
-
-
+-> the keys must be unique 
+-> 
 
 
 
