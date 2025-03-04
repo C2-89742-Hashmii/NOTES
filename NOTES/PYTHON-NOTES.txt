@@ -1,4 +1,4 @@
-######################PYTHON NOTES######################################################
+##############################################################PYTHON NOTES######################################################
 
 
 -----------------------------------------------SET--------------------------------------
@@ -37,7 +37,66 @@
 -> By this [] key direct access krne pr if  key is not present in dict it's throw an error  
 -> by this ".get()" method it return [None] if key is not present in dict 
 -> the keys must be unique 
+-> dict allows key to be any like ... int str ... but can not use   collection as a key
+-> *args indicate that this parameter will  collect all the argument 
+-> **kwargs to collect all named parameter 
+ 
+------------------------------------------------------  STRING -----------------------------------------------------------------
+
+
+->  A PRIMITIVE DATA TYPE
+-> IMMUTABLE 
+-> COLLECTION OF CHAR
 -> 
+
+
+
+
+----------------------------------------------------------MODULE-----------------------------------------------------------
+
+
+-> any file with .py or .pyc extension CONTAINING PYTHON CODE  IS CALLLED MODULE
+-> IMPORT MATH _OPERATION 
+-> __name__ is a dunder name is used to get the  module's  name 
+-> __main__ : or math_operations(file name ) both are same
+-> if __name__ == __main__ (execute code when the module 
+-> excute krne pr __main__ & import krne pr math_operations
+-> every modules in python gets __name__ automatically injected
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

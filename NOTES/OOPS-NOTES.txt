@@ -9,4 +9,10 @@
    -> It is similar to constructors in other languages like Java and C++
    -> If we don’t define __init__, Python provides a default one that does nothing
 
--> 
+-> Class--------->	  A blueprint for creating objects.
+-> Object --------->	  An instance of a class with specific attributes and behaviors.
+-> Encapsulation------->  Restricts direct access to data by using private/protected variables.
+-> Abstraction--------->  Hides complex implementation details from the user.
+-> Inheritance--------->  Allows a class to inherit attributes and methods from another class.
+-> Polymorphism---------> Allows different classes to have methods with the same name but different implementations.
+

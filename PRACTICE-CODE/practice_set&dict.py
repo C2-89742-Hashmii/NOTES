@@ -56,6 +56,15 @@
 # for key , value in person.items():
 #     print (key , value)
 
+##########################################################  STRING SLICING  #######################################################
 
+# NAME ="Steve jobs "
+# print (NAME.upper())
 
-
+# a="https://chatgpt.com/c"
+# # print(a.split("."))
+# print (a.replace( "_",":",))
+# print(a.split("."))
+import
+list1=[1,2,3,4,5,6,7]
+res = redu
