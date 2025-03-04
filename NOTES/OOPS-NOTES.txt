@@ -1,0 +1,12 @@
+------------------------------- OBJECT ORIENTED PROGRAMMING -------------------
+
+
+
+-> CLASS CAN BE CREATED BY [CLASS] KEY WORD
+
+-> { __init__ ] method is a special method run only once when object is instantiated or created
+   -> It helps in initializing object attributes
+   -> It is similar to constructors in other languages like Java and C++
+   -> If we don’t define __init__, Python provides a default one that does nothing
+
+-> 
