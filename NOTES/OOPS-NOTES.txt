@@ -1,18 +1,134 @@
-------------------------------- OBJECT ORIENTED PROGRAMMING -------------------
+------------------------------------------------ OBJECT ORIENTED PROGRAMMING ------------------------------------------
 
 
 
 -> CLASS CAN BE CREATED BY [CLASS] KEY WORD
-
--> { __init__ ] method is a special method run only once when object is instantiated or created
+  -> template to create an object
+  -> represent the real world entities
+  -> contains attributes (property of entities) and method
+----------------------------------------------------------------------------------------------------------------------> [ __init__ ] method is a special method run only once when object is instantiated or created
    -> It helps in initializing object attributes
    -> It is similar to constructors in other languages like Java and C++
-   -> If we don’t define __init__, Python provides a default one that does nothing
-
--> Class--------->	  A blueprint for creating objects.
+   -> If we don’t define __init__ Python provides a default one that does nothing
+----------------------------------------------------------------------------------------------------------------------> Class--------->	  A blueprint for creating objects.
 -> Object --------->	  An instance of a class with specific attributes and behaviors.
 -> Encapsulation------->  Restricts direct access to data by using private/protected variables.
 -> Abstraction--------->  Hides complex implementation details from the user.
 -> Inheritance--------->  Allows a class to inherit attributes and methods from another class.
 -> Polymorphism---------> Allows different classes to have methods with the same name but different implementations.
+---------------------------------------------------------------------------------------------------------------------->
+
+
+-> EVERY OBJECT HAS AN ID ( ADDRESS   WHERE THE OBJEVT IS CREATED)
+-> EVERY OBJECT GET A NEW ( UNIQUE) MEMORY ADDRESS
+-> NO TWO OBJECTS  HAVE SAME MEMORY ADDRESS 
+-> EVERY OBJECT HAS STATE
+    -> STATE : VALUE OF EVERY ATTRIBUTE 
+
+---------------------------------------------------------------------------------------------------------------------
+# convert the object to a dict to get the contents of object
+->  {person.__dict__} -> dunderdict
+
+# adding a first name as attribute
+-> setattr(person,"firstName" , "steve")
+
+
+-------------------------------------------  BUILT IN FUNCTION   ----------------------------------------------------------
+
+
+-> built-in function -
+  -> setattr()
+      -> use to set or add an attribute inside an object
+      -> if attr not exit it will get added to object
+      -> if attr exit get updated
+  -> getattr()
+      -> get an attribute from object ----   getattr(person,'firstName')
+      -> 
+  -> 
+
+
+----------------------------------------------    METHOD  ------------------------------------------------------------
+
+-> METHOD - A FUNCTION INSIDE A CLASS
+   1->  CONSTRUCTER
+   2->  DESTRUCTOR
+   3->  GETTER
+   4->  SETTER
+   5->  facilitator-(method used to add a facility in a class)
+-> self : self is a 
+
+---------------------------------------------------INSTANTIATION-------------------------------------------------------
+  
+   STEP1-> ALLOCATE THE MEMORY 
+   STEP2-> CALL THE INITIALIZER BY PASS THE RFFRECE OF THE OIBJECT
+           -> Person.__init__(person1)
+
+  ->  ANONYMOUS OBJECT : Person() - this statement is also create an object and cant used after the line of creation
+
+
+
+
+------------------------------------------------- DESTRUCTOR (DE-INITIALIZER) ----------------------------------------------
+
+-> IS ALSO KNOWN AS DE- INITIALIZER
+-> USED TO DESTRUCT THE OBJECT BEFORE OBJECT GET DESTRUCT ITSELF
+-> SPECIOL METHOD OF CLASS WITH NAME  __del__ GET CALLED EMPLICITLY FOR EVERY OBJECT
+-> EVERY CLASS MUST CONTAIN ONE AND ONLY ONE DE-INITIALIZER
+
+
+---------------------------------------------------GETTER & SETTER---------------------------------------------------------
+
+-> IN PRIVATE ACCESS MODIFIERS ITS CHANGE THE NAME CALLED (NAME MANGLING FEATURES ) MANGLED NAME 
+
+   -> IT IS COMPILER INTERNAL FEATURES
+   -> ITS CHANGE IN FUTURE THATS WHY WE DONT USE MANGLED NAME 
+
+-> SETTER - USED TO SET A VALYUE OF A ATTRIBUTE 
+          - SETTER IS ALSO  KNOWN AS [MUTATOR]
+-> GETTER - USED TO GET A VALUE OF AN ATTRIBUTE
+          - GETTER IS  ALSO KNOWN AS [INSPECTOR]  
+
+
+
+
+
+
+
+---------------------------------------------ACCESS  MODIFIERS------------------------------------------------------------>
+
+
+-> PUBLIC : MEMBER CREATED WITHOUT USING _ (UNDER_SOCRES)
+-> PRIVATE : MEMBER CREATED BY  USING __ (DUAL UNDER__SOCRES)
+-> PROTECTED : MEMBER CREATED BY  USING _ (SINGLE  UNDER__SOCRES)
+#  IF WE USE __UNDESCORE__ PREFIX AND SUFFIX THEN IT CALLED SYSTEM MEMBERS
+
+-----------------------------------   CODE REUSABILITY  -------------------------------------------------------------->
+
+-> CODE REUSABILITY -> 1) POP  | 2) OOP
+                    -> OOP 
+                         -> ASSOCIATION 
+                              -> COMPOSITION 
+                              ->  AGGREGATION 
+                         -> INHERITATION
+                              -> SINGLE
+                              -> MILTIPLE
+                              -> MULTILEVEL
+                              -> HIRECRHICAL
+                              -> HYBRID
+
+---------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
