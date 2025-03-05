@@ -32,3 +32,24 @@ print (dog2.name)
 print (dog2.OWNER.mobile_number)
 print (owner2.address)
 
+
+############################################################################################################################
+
+
+
+class Person :
+    def __init__ (self,name,age ):
+        self.name=name
+        self.age=age
+        
+    def greet(self):
+        print(f"My name is {self.name} and my age is {self.age}")
+        
+        
+person1= Person("gdfgb",1521000)
+person1.greet()
+
+############################################################################################################################
+
+
+
