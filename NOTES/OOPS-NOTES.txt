@@ -1,21 +1,31 @@
------------------------------------------------- OBJECT ORIENTED PROGRAMMING ------------------------------------------
+---------------------------------------------- OBJECT ORIENTED PROGRAMMING (CREATED BY ALAN K)-------------------------------------
 
-
+[GHOST IN THE WIRES WRITTEN BY KEVIN WITNICK BOOK]
 
 -> CLASS CAN BE CREATED BY [CLASS] KEY WORD
   -> template to create an object
   -> represent the real world entities
   -> contains attributes (property of entities) and method
-----------------------------------------------------------------------------------------------------------------------> [ __init__ ] method is a special method run only once when object is instantiated or created
+----------------------------------------------------------------------------------------------------------------------> 
+ 
+
+  -> [ __init__ ] method is a special method run only once when object is instantiated or created
    -> It helps in initializing object attributes
    -> It is similar to constructors in other languages like Java and C++
    -> If we don’t define __init__ Python provides a default one that does nothing
-----------------------------------------------------------------------------------------------------------------------> Class--------->	  A blueprint for creating objects.
+
+
+----------------------------------------------------------------------------------------------------------------------> 
+
+
+-> Class--------->	  A blueprint for creating objects.
 -> Object --------->	  An instance of a class with specific attributes and behaviors.
 -> Encapsulation------->  Restricts direct access to data by using private/protected variables.
 -> Abstraction--------->  Hides complex implementation details from the user.
 -> Inheritance--------->  Allows a class to inherit attributes and methods from another class.
 -> Polymorphism---------> Allows different classes to have methods with the same name but different implementations.
+
+
 ---------------------------------------------------------------------------------------------------------------------->
 
 
@@ -25,7 +35,10 @@
 -> EVERY OBJECT HAS STATE
     -> STATE : VALUE OF EVERY ATTRIBUTE 
 
+
 ---------------------------------------------------------------------------------------------------------------------
+
+
 # convert the object to a dict to get the contents of object
 ->  {person.__dict__} -> dunderdict
 
@@ -58,6 +71,7 @@
 -> self : self is a 
 
 ---------------------------------------------------INSTANTIATION-------------------------------------------------------
+
   
    STEP1-> ALLOCATE THE MEMORY 
    STEP2-> CALL THE INITIALIZER BY PASS THE RFFRECE OF THE OIBJECT
@@ -70,6 +84,8 @@
 
 ------------------------------------------------- DESTRUCTOR (DE-INITIALIZER) ----------------------------------------------
 
+
+
 -> IS ALSO KNOWN AS DE- INITIALIZER
 -> USED TO DESTRUCT THE OBJECT BEFORE OBJECT GET DESTRUCT ITSELF
 -> SPECIOL METHOD OF CLASS WITH NAME  __del__ GET CALLED EMPLICITLY FOR EVERY OBJECT
@@ -77,6 +93,7 @@
 
 
 ---------------------------------------------------GETTER & SETTER---------------------------------------------------------
+
 
 -> IN PRIVATE ACCESS MODIFIERS ITS CHANGE THE NAME CALLED (NAME MANGLING FEATURES ) MANGLED NAME 
 
@@ -89,7 +106,7 @@
           - GETTER IS  ALSO KNOWN AS [INSPECTOR]  
 
 
-
+-> __str__ use  for 
 
 
 
@@ -97,10 +114,15 @@
 ---------------------------------------------ACCESS  MODIFIERS------------------------------------------------------------>
 
 
--> PUBLIC : MEMBER CREATED WITHOUT USING _ (UNDER_SOCRES)
--> PRIVATE : MEMBER CREATED BY  USING __ (DUAL UNDER__SOCRES)
--> PROTECTED : MEMBER CREATED BY  USING _ (SINGLE  UNDER__SOCRES)
+-> PUBLIC :-> MEMBER CREATED WITHOUT USING _ (UNDER_SOCRES)
+-> PRIVATE :-> MEMBER CREATED BY  USING __ (DUAL UNDER__SOCRES)
+-> PROTECTED :-> MEMBER CREATED BY  USING _ (SINGLE  UNDER__SOCRES)
+             :-> THE MEMBER CAN BE ACCCESSED WITHIN THE SAME CLASS ALL CHILD OF THE PARENT CLASS
+             :-> PROTECTED MEMEBER CAN BE ACCCESSED  OUTSIDE THE CLASS BUT ITS DISCOURAGED TO DO SO 
+-> 
+
 #  IF WE USE __UNDESCORE__ PREFIX AND SUFFIX THEN IT CALLED SYSTEM MEMBERS
+
 
 -----------------------------------   CODE REUSABILITY  -------------------------------------------------------------->
 
@@ -108,7 +130,7 @@
                     -> OOP 
                          -> ASSOCIATION 
                               -> COMPOSITION 
-                              ->  AGGREGATION 
+                              -> AGGREGATION 
                          -> INHERITATION
                               -> SINGLE
                               -> MILTIPLE
@@ -116,18 +138,63 @@
                               -> HIRECRHICAL
                               -> HYBRID
 
----------------------------------------------------------------------------------------------------------------------->
+-------------------------------------------------  INHERITANCE (IS-A RELATIONSHIP ) ----------------------------------------------------------->
+
+
+-> FEATURE OF PROGRM USE TO SHARE THE CODE AMONGST THE CLASSES 
+-> UNLIKE ASSOSCIATION , INHERITANCE CREATES THE RELATIONSHIP INTERNALLY
+-> {Student.__base__} WILL TELL YOU WHO'S THE BASE CLASS OF STUDENT
+-> {Student.__base__} WILL TELL YOU WHO'S THE BASE CLASS OF OBJECT
+-> IN PYTHON 3 AND ONWARDS EVERY CLASS IS DERIVED FROM OBJECT WHERE OBJECT IS A BUILT-IN CLASS WHICH IS A ROOT CLASS IN PY3
+-> EVERY CLASS IS DERIVEED FROM OBJECT IMPLICITLY OR EXPLICITLY 
+-> PROVIDES BASIC FEATURES TO EVERY CLASS OBJECT (RELATED TO MEMORY MANAGEMNT)
+-> EVERY DERIVED CLASS OBJECT WILL ALWAYS CONATAIN AN OBJECT OF BASE CLASS
+-> [__MAIN__ IS A MODULE NAME]
+
+
+--------------------------------------------------------  MEHOD OVERRIDING  ---------------------------------------------------------------->
+
+                                                         
+
+->  parent amnd child class define the metjod with same name 
+->  child class may over ride the methiod  by providing the same signature as that of the parent class 
+->  if the method is called on parent class (Person) object , it will get called from parent class (Person)
 
 
 
+--------------------------------------------------------  MULTILEVEL INHERITANCE  -------------------------------------------------------->
+
+
+-> ONE SUPERCLASS HAVING ONE SUBCALASS AND THE SUBCALSS HAS ONE OR MORE SUBCLASS
+-> [ PERSON -> EMPLOYEE -> MANAGER ]
+-> IN INHERITANCE CHILD CLASS  CAN NOT ACCESS THE PRIVATE MEMBER OF PARENT CLASS
+-> 
+
+-------------------------------------------------------   MULTIPLE INHERITANCE  --------------------------------------------------------->
+
+-> JAVA DOESNT SUPPORT MULTIPLE INHERITENCE 
+-> A CHILD CLASS IS DERIVED FROM MULTIPLE BASE CLASSES
+-> [ {Devloper.__init__(self,first,---)}    / { Ops.__init__(self,first,---)}  /  {self._company=company }]
+-> 
+
+
+------------------------------------------------------- HIERARCHICAL INHERITANCE --------------------------------------------------------->
+
+-> OPPOPSITE OF MULTIPLE 
+-> ONE BASE CLASS HAVING MORE THAN ONE DERIVED CLASS 
 
 
 
+----------------------------------------------------------    HYBRID  INHERITANCE   ------------------------------------------------------>
+
+-> COMBINATION OF TWO OR MORE TYPE OF INHERITANCE 
 
 
+--------------------------------------------------------     POLYMORPHISM       ------------------------------------------------------------>
 
-
-
+1-> STATIC POLYMORPHISM ->
+                               
+2-> DYNAMIC POLYMORPHISM -> 
 
 
 
