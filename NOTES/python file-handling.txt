@@ -1,0 +1,30 @@
+----------------------------------------FILE HANDLING ----------------------------------------------------
+
+-> FILE MODE 
+     -> (r) : READ 
+     -> (w) : WRITE 
+     -> (a) : APPEND
+-> FILE TYPE 
+     -> TEXT FILE [t] (TEXT FILE )
+     -> BINARY FILE [b] (BYTE INFO) -> CAN NOT BE EDITED ANY TYPE OF EDITOR
+
+-> FILE =open ("./myfile.txt", "rt")
+
+-> FILE.close() : FOR CLOSE THE FILE 
+
+-> FILE.seek() : FOR CHECK WHERE IS MY CURSOR 
+
+-> FILE.read(10) : STARTING 10 CHARACTERS
+
+-> with open (file.name) as file : 
+   	print(file.read)
+
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+
+
+

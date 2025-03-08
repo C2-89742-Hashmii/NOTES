@@ -1,0 +1,6 @@
+Connecting DB's with Python. 
+Working with DB's using Python. 
+Accessing and Manipulating DB's. 
+Creation of Python virtual Environment. 
+Working with beautiful soup. 
+Working with matplotlib, seaborn.
