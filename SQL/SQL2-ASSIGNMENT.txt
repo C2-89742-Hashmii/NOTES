@@ -1,0 +1,190 @@
+------------------------------------------------- query 1 ------------------------------------------------------------------------
+
+
+C2-89743-HASHMI [classworkdb]>SELECT SUBJECT , COUNT(ID) FROM BOOKS
+    -> GROUP BY SUBJECT ;
++-------------------+-----------+
+| SUBJECT           | COUNT(ID) |
++-------------------+-----------+
+| C Programming     |         4 |
+| C++ Programming   |         3 |
+| Java Programming  |         3 |
+| Operating Systems |         3 |
++-------------------+-----------+
+
+
+------------------------------------------------- query 2 ------------------------------------------------------------------------
+
+
+
+
+C2-89743-HASHMI [classworkdb]>SELECT SUBJECT , COUNT(ID) FROM BOOKS
+    -> GROUP BY SUBJECT
+    -> HAVING COUNT(ID) >2 ;
++-------------------+-----------+
+| SUBJECT           | COUNT(ID) |
++-------------------+-----------+
+| C Programming     |         4 |
+| C++ Programming   |         3 |
+| Java Programming  |         3 |
+| Operating Systems |         3 |
++-------------------+-----------+
+
+
+------------------------------------------------- query 3 ------------------------------------------------------------------------
+
+
+
+
+C2-89743-HASHMI [classworkdb]>SELECT * FROM BOOKS
+    -> ORDER BY PRICE DESC;
++------+---------------------------------+-------------------+-------------------+---------+
+| id   | name                            | author            | subject           | price   |
++------+---------------------------------+-------------------+-------------------+---------+
+| 2003 | C++ Programming Language        | Bjarne Stroustrup | C++ Programming   | 987.213 |
+| 2002 | C++ Primer                      | Stanley Lippman   | C++ Programming   | 620.665 |
+| 3002 | Core Java Volume I              | Cay Horstmann     | Java Programming  | 575.651 |
+| 4001 | Operating System Concepts       | Peter Galvin      | Operating Systems | 567.391 |
+| 3001 | Java Complete Reference         | Herbert Schildt   | Java Programming  | 525.121 |
+| 3003 | Java Programming Language       | James Gosling     | Java Programming  | 458.238 |
+| 4002 | Design of UNIX Operating System | Mauris J Bach     | Operating Systems | 421.938 |
+| 2001 | C++ Complete Reference          | Herbert Schildt   | C++ Programming   | 417.764 |
+| 1002 | Pointers in C                   | Yashwant Kanetkar | C Programming     | 371.019 |
+| 4003 | UNIX Internals                  | Uresh Vahalia     | Operating Systems | 352.822 |
+| 1003 | ANSI C Programming              | E Balaguruswami   | C Programming     | 334.215 |
+| 1004 | ANSI C Programming              | Dennis Ritchie    | C Programming     | 140.121 |
+| 1001 | Exploring C                     | Yashwant Kanetkar | C Programming     | 123.456 |
++------+---------------------------------+-------------------+-------------------+---------+
+
+
+------------------------------------------------- query 4 ------------------------------------------------------------------------
+C2-89743-HASHMI [classworkdb]>SELECT AUTHOR ,COUNT(ID) FROM BOOKS
+    -> GROUP BY AUTHOR;
++-------------------+-----------+
+| AUTHOR            | COUNT(ID) |
++-------------------+-----------+
+| Yashwant Kanetkar |         2 |
+| E Balaguruswami   |         1 |
+| Dennis Ritchie    |         1 |
+| Herbert Schildt   |         2 |
+| Stanley Lippman   |         1 |
+| Bjarne Stroustrup |         1 |
+| Cay Horstmann     |         1 |
+| James Gosling     |         1 |
+| Peter Galvin      |         1 |
+| Mauris J Bach     |         1 |
+| Uresh Vahalia     |         1 |
++-------------------+-----------+
+
+
+
+------------------------------------------------- query 5 ------------------------------------------------------------------------
+
+C2-89743-HASHMI [classworkdb]>SELECT AUTHOR ,COUNT(ID) FROM BOOKS
+    -> GROUP BY AUTHOR
+    -> HAVING COUNT(ID) >1;
++-------------------+-----------+
+| AUTHOR            | COUNT(ID) |
++-------------------+-----------+
+| Yashwant Kanetkar |         2 |
+| Herbert Schildt   |         2 |
++-------------------+-----------+
+
+
+
+------------------------------------------------- query 6 ------------------------------------------------------------------------
+
+
+C2-89743-HASHMI [classworkdb]>SELECT SUBJECT ,MAX(PRICE) FROM BOOKS
+    -> GROUP BY SUBJECT;
++-------------------+------------+
+| SUBJECT           | MAX(PRICE) |
++-------------------+------------+
+| C Programming     |    371.019 |
+| C++ Programming   |    987.213 |
+| Java Programming  |    575.651 |
+| Operating Systems |    567.391 |
++-------------------+------------+
+
+
+
+
+------------------------------------------------- query 7 ------------------------------------------------------------------------
+
+
+C2-89743-HASHMI [classworkdb]>SELECT SUBJECT ,AVG(PRICE) FROM BOOKS
+    -> GROUP BY SUBJECT;
++-------------------+-------------+
+| SUBJECT           | AVG(PRICE)  |
++-------------------+-------------+
+| C Programming     | 242.2027531 |
+| C++ Programming   | 675.2139994 |
+| Java Programming  | 519.6699931 |
+| Operating Systems | 447.3836568 |
++-------------------+-------------+
+
+
+------------------------------------------------- query 8 ------------------------------------------------------------------------
+
+
+C2-89743-HASHMI [classworkdb]>SELECT SUBJECT SUBJECT , PRICE FROM BOOKS
+    -> GROUP BY SUBJECT , PRICE
+    -> HAVING PRICE >(SELECT AVG(PRICE) FROM BOOKS);
++-------------------+---------+
+| SUBJECT           | PRICE   |
++-------------------+---------+
+| C++ Programming   | 620.665 |
+| C++ Programming   | 987.213 |
+| Java Programming  | 525.121 |
+| Java Programming  | 575.651 |
+| Java Programming  | 458.238 |
+| Operating Systems | 567.391 |
++-------------------+---------+
+
+
+------------------------------------------------- query 9------------------------------------------------------------------------
+
+
+C2-89743-HASHMI [classworkdb]>SELECT AUTHOR FROM BOOKS
+    -> ORDER BY AUTHOR;
++-------------------+
+| AUTHOR            |
++-------------------+
+| Bjarne Stroustrup |
+| Cay Horstmann     |
+| Dennis Ritchie    |
+| E Balaguruswami   |
+| Herbert Schildt   |
+| Herbert Schildt   |
+| James Gosling     |
+| Mauris J Bach     |
+| Peter Galvin      |
+| Stanley Lippman   |
+| Uresh Vahalia     |
+| Yashwant Kanetkar |
+| Yashwant Kanetkar |
++-------------------+
+
+
+------------------------------------------------- query 10 ------------------------------------------------------------------------
+
+
+C2-89743-HASHMI [classworkdb]>SELECT subject, SUM(price) AS total_price
+    -> FROM books
+    -> GROUP BY subject
+    -> HAVING SUM(price) > 1000;
++-------------------+-------------+
+| subject           | total_price |
++-------------------+-------------+
+| C++ Programming   |    2025.642 |
+| Java Programming  |    1559.010 |
+| Operating Systems |    1342.151 |
++-------------------+-------------+
+
+
+
+
+
+
+
+
