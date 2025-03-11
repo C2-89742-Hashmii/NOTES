@@ -1,0 +1,16 @@
+---------------------------------------Q1-> -------------------------------------
+
+implement an object oriented program to manage staff for the institute .
+--create a class 'Staff' with id , staffname , stafftype (teaching/nonteaching), provide following functionalities :
+1- parameterized initializer
+2- override __str__ method
+3- method to print staff details 
+
+-- create another class Institute with institute name and stafflist . provide following functionalities .
+1- parameterized initializer with default arguments
+2-method to add new staff in staff list (5 staff member )
+3-print only  teaching staff (all) -use filter 
+4- print only non teaching staff (all)-use filter 
+5-display all staff (sorted by name )
+6-search staff by Id (use list comprehension )
+write a module to test above functionalities...

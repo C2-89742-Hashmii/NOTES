@@ -1,0 +1,505 @@
+
+
+--------------------------------- SIMPLE QUESTION --------------------------------------------------------------------------------------------------------
+
+
+
+
+QUES1-> what is python?
+SOL-> Python is a high-level, interpreted programming language known for its simplicity,     readability, and versatility. It is widely used in various domains such as web    development, data  science, artificial intelligence, DevOps, automation, and more.
+
+Key Features of Python->
+
+-> Easy to Learn & Readable – Uses simple, English-like syntax.
+-> Interpreted Language – No need for compilation; runs directly using an interpreter.
+-> Dynamically Typed – No need to define variable types explicitly.
+-> Multi-Paradigm – Supports object-oriented, procedural, and functional programming.
+-> Extensive Libraries – Comes with a rich standard library (math, os, json, etc.)
+-> PLUS  external libraries like Flask for web development, Pandas for data analysis..
+-> Cross-Platform – Runs on Windows, macOS, and Linux.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q2 -> does python have any entry point function?
+SOL-> Unlike languages like C, C++, and Java, which have a mandatory main() function as the   entry point, Python does not require a specific entry point function. However, Python does have a common convention for defining the main entry point using:
+
+   [if __name__ == "__main__":]
+
+-> Why Use if __name__ == "__main__"?
+   -> Prevents unintended execution when a script is imported as a module.
+   -> Defines a clear entry point, similar to main() in C, C++, and Java
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q3-> why python is called a general purpose programming language?
+SOL-> Python is called a general-purpose programming language because it is not limited to a specific domain or type of application. Instead, it can be used across a wide range of fields, including web development, data science, DevOps, automation, AI, game development, and more.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q4-> what are the data types supported in python?
+SOL-> 
+        x    = 10          # int
+        y    = 3.14        # float
+        z    = 2 + 3j      # complex
+        s    = "Hello"     # str
+        list = [1, 2, 3]   # list
+        tuple  = (4, 5, 6) # tuple
+        set   = {7, 8, 9}  # set
+        d    = {"a": 1}    # dict
+        b    = True        # bool
+        n    = None        # NoneType
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q5 -> what is the return value of a non-returning function?
+sol ->In Python, if a function does not explicitly return a value, it implicitly returns None.
+example->
+
+def greet():
+    print("Hello, World!")
+
+result = greet()  # Calling the function
+print(result)     # Output: None
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q6-> what is global keyword? why is it used in python?
+sol -> The global keyword in Python is used to modify a global variable inside a function. Normally, variables declared inside a function are local, meaning they cannot change global variables unless explicitly declared global.
+
+
+-> Why is global Used?
+ 
+By default, when you assign a value to a variable inside a function, Python treats it as a local variable. If you want to modify a global variable inside a function, you must use the global keyword.
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q7-> explain the global scope in python and in c?
+sol -> The global scope refers to variables declared outside of any function, making them accessible throughout the program. However, Python and C handle global scope differently.
+
+Ex->
+
+x = 10  # Global variable
+
+def display():
+    print(x)  # Accessing global variable inside function
+
+display()  # Output: 10
+
+
+-> By default, if you assign a new value to a global variable inside a function, Python treats it as a local variable, causing an error.
+
+ex->
+
+x = 10  # Global variable
+
+def modify():
+    x = x + 5  # ❌ UnboundLocalError: local variable 'x' referenced before assignment
+
+modify()
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q8-> what is List?
+sol-> A list in Python is an ordered, mutable (changeable) collection that can store multiple items in a single variable. Lists can hold different data types, including numbers, strings, and even other lists.
+
+Key Features of Lists->
+
+✅ Ordered – Elements maintain their position.
+✅ Mutable – Can be modified (add, remove, or change elements).
+✅ Allows Duplicates – Multiple occurrences of the same value are allowed.
+✅ Heterogeneous – Can store different data types.
+✅ Indexed – Supports indexing and slicing.
+
+
+ex -> 
+
+# Empty list
+my_list = []
+
+# List of numbers
+numbers = [1, 2, 3, 4, 5]
+
+# List of strings
+fruits = ["apple", "banana", "cherry"]
+
+# Mixed data types
+mixed = [1, "hello", 3.5, True]
+
+# Nested list (List inside a list)
+nested = [[1, 2], [3, 4]]
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q9-> what is tuple?
+sol -> A tuple is an ordered, immutable (unchangeable) collection in Python. It is similar to a list, but once created, its elements cannot be modified.
+
+Key Features of Tuples->
+
+
+✅ Ordered – Elements maintain their order.
+✅ Immutable – Cannot be changed after creation.
+✅ Allows Duplicates – Multiple occurrences of the same value are allowed.
+✅ Heterogeneous – Can store different data types.
+✅ Indexed – Supports indexing and slicing.
+
+
+EX->
+
+
+# Empty tuple
+empty_tuple = ()
+
+# Tuple with numbers
+numbers = (1, 2, 3, 4, 5)
+
+# Tuple with strings
+fruits = ("apple", "banana", "cherry")
+
+# Mixed data types
+mixed = (1, "hello", 3.5, True)
+
+# Nested tuple (Tuple inside a tuple)
+nested = ((1, 2), (3, 4))
+
+# Single-element tuple (Note the trailing comma)
+single = (5,)  # NOT (5), because (5) would be an integer
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q10-> how tuple is different than a List?
+sol-> A tuple is an immutable collection, meaning its elements cannot be changed after creation, while a list is mutable and allows modifications like adding, removing, or updating elements. Tuples are faster and use less memory, making them ideal for fixed data like coordinates or days of the week, whereas lists are better suited for dynamic data that changes frequently. Lists provide more built-in methods like append(), remove(), and sort(), while tuples only support count() and index(). Additionally, tuples can be used as dictionary keys, but lists cannot due to their mutability. If you need performance and safety, use a tuple; if flexibility is required, use a list. 
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q11-> - what is a set? and how it is different than List?
+sol -> A set in Python is an unordered, mutable collection of unique elements. Unlike lists, sets do not allow duplicates and do not maintain any specific order. Sets are useful for eliminating duplicate values and performing mathematical set operations like union, intersection, and difference.
+
+ex-> 
+
+# List (Allows duplicates, maintains order)
+my_list = [1, 2, 2, 3, 4]
+print(my_list)  # Output: [1, 2, 2, 3, 4]
+
+# Set (Removes duplicates, unordered)
+my_set = {1, 2, 2, 3, 4}
+print(my_set)  # Output: {1, 2, 3, 4}
+
+# Checking membership (Faster in sets)
+print(3 in my_set)  # True (Fast)
+print(3 in my_list)  # True (Slower)
+
+
+-> Use sets when you need unique elements and fast lookups, and lists when you need ordered, modifiable data with duplicates. 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q12-> what is the frozenset? and how is it different than a set?
+sol -> A frozenset in Python is an immutable version of a set, meaning that once created, its elements cannot be modified, added, or removed. It is useful when you need a set but want to ensure that it remains unchanged, making it hashable and usable as a dictionary key or an element in another set.
+
+EX-> 
+
+# Normal Set (Mutable)
+my_set = {1, 2, 3}
+my_set.add(4)  # ✅ Allowed
+my_set.remove(2)  # ✅ Allowed
+print(my_set)  # Output: {1, 3, 4}
+
+# Frozenset (Immutable)
+my_frozenset = frozenset({1, 2, 3})
+my_frozenset.add(4)  # ❌ AttributeError: 'frozenset' object has no attribute 'add'
+print(my_frozenset)  # Output: frozenset({1, 2, 3})
+
+# Using Frozenset as a Dictionary Key
+my_dict = {my_frozenset: "immutable set"}
+print(my_dict)  # Output: {frozenset({1, 2, 3}): 'immutable set'}
+
+
+
+------------------------------- INTERMEDIATE QUESTION -------------------------------------------------------------------------------------------------
+
+Q13->  what is a function reference?
+SOL->  A function reference in Python refers to the process of assigning a function to a variable or passing it as an argument without calling it. Instead of executing the function, the reference allows you to use the function dynamically, such as passing it to another function, storing it in a variable, or using it in data structures.
+
+EX -> 
+
+def greet():
+    print("Hello, World!")
+
+# Assign function reference to a variable (without calling it)
+greeting = greet  
+
+# Calling the function using the reference
+greeting()  # Output: Hello, World!
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q14-> how the function gets executed in python?
+SOL -> When a function is executed in Python, it first needs to be defined using the def keyword, but it does not run immediately. The function runs only when it is called by its name followed by parentheses. When a function is called, Python creates a new space in memory to run it. If the function has parameters, Python assigns values to them. Then, the function's code runs line by line. If the function has a return statement, it sends a result back; otherwise, it returns None. Once done, Python removes the function from memory and continues with the rest of the program.
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q15->what is lambda function
+SOL -> A lambda function in Python is a small, anonymous function that can have any number of arguments but only one expression. It is defined using the lambda keyword and is often used for short, simple operations where a full function definition isn't needed.
+
+EX ->
+
+
+# Regular function
+def square(x):
+    return x * x
+
+# Lambda function (shorter version)
+square_lambda = lambda x: x * x
+
+print(square(5))         # Output: 25
+print(square_lambda(5))  # Output: 25
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q16 -> what is the difference between named function and lambda?
+SOL -> A named function is a regular function in Python that is defined using the def keyword and has an explicit name. It can contain multiple statements, complex logic, and return values. Named functions are easier to read, reusable, and maintainable, making them suitable for larger programs. On the other hand, a lambda function is an anonymous, single-expression function defined using the lambda keyword. Unlike named functions, lambda functions do not require a name and return the result of their single expression automatically. They are mostly used for short, temporary operations like sorting, filtering, and mapping data. While named functions offer better readability and flexibility, lambda functions provide a compact way to write simple functions without explicitly defining them.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q17 -> what are the rules to write a lambda function?
+SOL -> When writing a lambda function in Python, there are a few rules to follow:
+
+A lambda function must be defined using the lambda keyword, followed by one or more arguments, a colon :, and a single expression. It cannot contain multiple expressions or statements like loops, assignments, or return. The function automatically returns the result of the expression without needing an explicit return keyword. Since lambda functions are meant for short, simple operations, they should not be used for complex logic. Also, they do not support annotations or docstrings like named functions.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q18-> what are the use cases of lambda?
+SOL -> lambda functions in Python are useful for short, one-time operations where defining a full function using def would be unnecessary. They are commonly used in functional programming with built-in functions like map(), filter(), and sorted(). In data processing, they help apply quick transformations to lists or tuples. They are also used in GUI programming for defining button actions and event handling without creating separate functions. In sorting and custom key functions, lambdas make it easy to sort lists of tuples or dictionaries based on specific elements. Additionally, they are helpful in lambda expressions inside list comprehensions and reducing boilerplate code in simple operations.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q19-> why List is called as mutable collection?
+SOL -> A list is called a mutable collection in Python because its elements can be changed after creation. This means you can add, remove, or modify elements without creating a new list. Lists support various operations like appending new elements, changing existing values, and deleting elements, making them flexible and dynamic.
+
+EX-> 
+
+
+my_list = [1, 2, 3]
+my_list.append(4)  # Adds 4 to the list
+my_list[1] = 10    # Modifies the second element
+del my_list[0]     # Removes the first element
+
+print(my_list)  # Output: [10, 3, 4]
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q20-> how to create a tuple with only one value?
+SOL -> To create a tuple with only one value, you must include a trailing comma after the value; otherwise, Python will treat it as a regular data type instead of a tuple.
+
+EX -> 
+
+single_tuple = (5,)        # Correct way to create a tuple with one element
+print(type(single_tuple))  # Output: <class 'tuple'>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q21-> what is tuple packing?
+SOL -> Tuple packing is the process of creating a tuple by directly assigning multiple values to a single variable without using parentheses. Python automatically groups these values into a tuple.
+
+EX -> 
+
+my_tuple = 10, 20, 30  # Packing values into a tuple
+print(my_tuple)        # Output: (10, 20, 30)
+print(type(my_tuple))  # Output: <class 'tuple'>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q22-> what is map and filter? what are differences?
+SOL -> map() and filter() are built-in Python functions used for processing iterables efficiently.
+
+-> map() is used to apply a function to each element of an iterable and return a new iterable (map object) with the transformed values.
+-> filter() is used to select elements from an iterable based on a condition and returns only the elements that satisfy that condition.
+
+
+MAP () EX -> 
+
+nums = [1, 2, 3, 4]
+squared = list(map(lambda x: x * x, nums))
+print(squared)  # Output: [1, 4, 9, 16]
+
+
+FILTER () EX ->
+
+nums = [1, 2, 3, 4, 5, 6]
+evens = list(filter(lambda x: x % 2 == 0, nums))
+print(evens)  # Output: [2, 4, 6]
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q23 -> when to use map and when to use filter?
+SOL -> you should use map() when you need to apply a function to all elements of an iterable and get a transformed list. On the other hand, use filter() when you need to extract specific elements from an iterable based on a condition.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q24-> if map and filter need to be used together which one will be used first? why?
+SOL-> When using map() and filter() together, filter() should be used first, followed by map(). This is because filter() reduces the dataset by selecting only the required elements, and then map() transforms those selected elements. This approach improves efficiency, as map() will process fewer elements, reducing unnecessary computations.
+
+EX -> 
+
+nums = [1, 2, 3, 4, 5, 6]
+result = list(filter(lambda x: x % 2 == 0, map(lambda x: x * x, nums)))
+print(result)  # Output: [4, 16, 36]
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q25 -> how can we perform map and filter operations on list of dictionaries?
+SOL -> We can use map() and filter() on a list of dictionaries by applying custom lambda functions that operate on dictionary values.
+
+EX -> 
+
+students = [
+    {"name": "Alice", "age": 22},
+    {"name": "Bob", "age": 25},
+    {"name": "Charlie", "age": 20}
+]
+
+names = list(map(lambda student: student["name"], students))
+print(names)  # Output: ['Alice', 'Bob', 'Charlie']
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q26 -> how can we perform map and filter operations on list of tuples?
+SOL-> We can perform map() and filter() operations on a list of tuples to transform or filter data efficiently. The map() function is used to modify each tuple or extract specific values, while filter() helps in selecting tuples that meet a certain condition. For example, if we have a list of tuples containing numbers, we can use map() to double each value or extract specific elements. Similarly, filter() can be applied to select only those tuples where a particular element meets a condition, such as numbers greater than a given threshold. When combining both functions, it is generally recommended to use filter() first to reduce the dataset, followed by map() to apply transformations only to the relevant tuples. This approach improves efficiency by ensuring that unnecessary computations are avoided.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q27 -> what is the difference between list of tuples and tuple of lists?
+SOL -> A list of tuples and a tuple of lists are different in structure and mutability.
+A list of tuples is a list where each element is a tuple. Since lists are mutable, you can modify, add, or remove tuples from the list, but the individual tuples inside remain immutable. This structure is useful when you have fixed data points that should not change, but you need to manage the overall collection dynamically.
+
+
+EX -> 
+
+list_of_tuples = [(1, 2), (3, 4), (5, 6)]
+list_of_tuples.append((7, 8))  # Allowed (modifying the list)
+list_of_tuples[0] = (0, 0)     # Allowed (replacing a tuple)
+# list_of_tuples[1][0] = 10    # Not allowed (tuples are immutable)
+print(list_of_tuples)  # Output: [(0, 0), (3, 4), (5, 6), (7, 8)]
+
+
+A tuple of lists, on the other hand, is a tuple where each element is a list. Since tuples are immutable, you cannot change the overall structure, such as adding or removing elements, but the individual lists inside remain mutable. This structure is useful when the number of groups is fixed, but their contents need to be modified.
+
+
+EX -> 
+
+tuple_of_lists = ([1, 2], [3, 4], [5, 6])
+tuple_of_lists[0].append(10)     # Allowed (modifying the list inside)
+# tuple_of_lists.append([7, 8])  # Not allowed (tuples are immutable)
+# tuple_of_lists[0] = [0, 0]     # Not allowed (cannot replace elements)
+print(tuple_of_lists)  # Output: ([1, 2, 10], [3, 4], [5, 6])
+
+
+Key Differences:->
+-> A list of tuples allows modification of the list but not the tuples inside.
+-> A tuple of lists keeps its structure fixed but allows modification of the lists inside.
+-> Use list of tuples when the overall structure is dynamic but individual records are fixed.
+-> Use tuple of lists when the number of groups is fixed, but their contents may change. 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
